@@ -20,11 +20,11 @@
     </header>
     <main>
         <section class="portadaForm">
-            <h1>Vive la emoción de conducir sin pagar de más</h1>
+            <h1 class="title">Vive la emoción de conducir sin pagar de más</h1>
             <form class="formContact" action="">
                 <p>Comunicate con nosotros!</p>
                 <label>Nombre y apellido</label>
-                <input type="text" value="">
+                <input type="text" value="" width="50px">
                 <label>Email</label>
                 <input type="email" value="">
                 <label>Número de telefono</label>
@@ -37,18 +37,29 @@
         </section>
         <section class="venta">
             <a name:"ventaAuto"><h2>Compramos tu auto!</h2></a>
-            <p>Chocado</p><img src="image/auto-chocado.jpg" alt="" width="300px">
-            <p>Vandalizado</p><img src="image/auto-vandalizado.jpg" alt="" width="300px">
-            <p>Viejo</p><img src="image/auto-viejo.jpg" alt="" width="300px">
-            <p>Usado</p><img src="image/auto-usado.webp" alt="" width="300px"> 
+            <div class="imgUsado">
+                <div class="imgU">
+                    <p>Chocado <img src="image/chocado5.jpg" alt="" width="300"></p>
+                </div>
+                <div class="imgU">
+                    <p>Vandalizado <img src="image/auto-vandalizado.jpg" alt="" width="300px"></p>
+                </div>
+                <div class="imgU">
+                    <p>Viejo <img src="image/auto-viejo.jpg" alt="" width="300px"></p>
+                </div>
+                <div class="imgU">
+                    <p>Usado <img src="image/auto-usado.webp" alt="" width="300px"> </p>
+                </div>
+            </div>
         </section>
-        <section class="compra">
-            <div>
+        <section class="compra--container">
+            <div class="compra--title">
                 <a name="compraAuto"><h2>ADQUIRÍ TU VEHÍCULO ADAPTADO A TUS NECESIDADES SIN GASTAR DE MÁS</h2></a>
             </div>
-            <Label>Search</Label>
-            <input type="text">
-            <button>Lupa</button>
+            <div class="compra--search">
+                <input class="search-input" type="text" value=" Buscar">
+                <button><img src="image/search.png" alt="buscador" width="13px"></button>
+            </div>
             <img src="" alt="">
             <img src="" alt="">
             <img src="" alt="">
@@ -61,7 +72,7 @@
         </section>
         <section class="formP">
             <h1>ASESORATE CON NOSOTROS SOBRE LA COTIZACIÓN DE TU VEHÍCULO</h1>
-            <form class="formContact" action="">
+            <form class="formPresent" action="">
                 <p>Rellena los campos con la informacion requerida y te haremos llegar cotización estimada a negociar de tu vehículo por correo electrónico</p>
                 <label>Nombre y apellido</label>
                 <input type="text" value="">
