@@ -23,12 +23,93 @@ Nav ul {
   list-style: none;
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 li{
   margin: 0 10px;
+}
+.formContact {
+  width: 45%;
+  margin:30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #35353191;
+  border-radius: 15px;
+  justify-content: center;
 }
 
 /* agregué la imagen de portada en el background del contenedor, o sea de fondo, para que sea más 
 fácil manipular los elementos dentro del contenedor */
 .portadaForm {
-    background-image: url(image/portada.jpg); 
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-image: url(image/portada.jpg); 
 }
+
+/*Importante: para el titulo tenemos que lograr ubicarlo bien, agregar algo más al 
+eslogan, cambiarle la fuente, tamaño, ubicarlo bien y lo más importante tratar de que cuando 
+sean pantallas chiquitas no ocupe tanto espacio y las letras comiencen a bajar. Creo que esa
+es una propiedad que podríamos usarla con lo que hacia el profe en el mismo html, md, pl de boostrap
+en el que le demos indicaciones de que si se trata de pantallas chiquitas que se 
+comporte de determinada manera.*/
+.title {
+  display: flex;
+  position: relative;
+  margin-top: 10%;
+}
+
+/* Sección de compra de auto usado */
+
+.venta {
+  background-color:rgb(12, 9, 9);
+}
+h2 {
+  text-align: center;
+  color: #F8F9F9;
+}
+
+.imgUsado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+.imgU {
+  border-radius: 11px;
+  width: 308px;
+  margin: 10px;
+}
+.imgU p {
+  text-align: center;
+  color:  #F8F9F9;
+}
+
+.imgU img {
+  border-radius: 18px;
+  box-shadow: 2px 2px 2px 0px  rgb(70, 69, 69);
+}
+
+/*Section de venta al cliente */
+
+.compra--container {
+  background-color: rgb(12, 9, 9);
+}
+
+.search-input{
+  width: 35%;
+}
+
+.compra--search{
+  display: flex;
+  justify-content: center;
+}
+
