@@ -2,52 +2,160 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* tenemos que agregar la fuente de las letras acá*/
+    font-family: 'Quicksand', sans-serif;
   }
-  
-  /* Primero empecé con el encabezado. le dí una propiedad de flex para
-  poder mover más fácil los elementos y que se adapten bien después a un
-  diseño responsivo.
-  Centré los elementos y los acomode a lo largo del contenedor con el justify content.*/
- header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #b70e0e;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-h1 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0px 0px 0px 20px;
-  color: #080808;
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+  }
+
+h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    color: rgba(255,255,255,.5)
 }
 
-.headerNav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#b70e0e;
+h2 img {
+    padding-right: 4px;
 }
 
-.headerNav li {
-  float: left;
+/*Efecto del header*/
+.header--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    text-transform: uppercase;
+    text-align: center;
+
 }
 
-.headerNav li a {
-  display: flex;
-  color:  #080808;
-  text-align: center;
-  padding: 14px 16px;
+.header--container * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.header--container li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 5px;
+}
+
+.header--container a {
+  padding: .5em .8em;
+  position: relative;
   text-decoration: none;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  color: rgba(255,255,255,.5)
 }
 
-.headerNav li a:hover {
-  background-color: #921818;
+.header--container a::before,
+.header--container a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
 }
+
+.header--container a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #f2680d;
+  border-right: 3px solid #f2680d;
+  transform: translate(-100%, 50%);
+}
+
+.header--container a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #f2680d;
+  border-left: 3px solid #f2680d;
+  transform: translate(100%, -50%)
+}
+
+.header--container a:hover:before,
+.header--container a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.header--container a:hover {
+  color: #3E8914;
+}
+/*Portada*/
+
+.portada--container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  border: ridge;
+  box-shadow: 
+    0px 0px 5px rgba(0, 0, 0, 0.3), /* sombra exterior */
+    inset 0px 0px 5px rgba(0, 0, 0, 0.3); /* sombra interior */
+}
+
+h1 {
+  height: 35px;
+  padding-top: 35px;
+  text-shadow:0 0 3px #f2680d, 0 0 5px #3E8914;
+}
+
+/*Sección de beneficios*/
+.beneficios--container, .caja-constraste {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.beneficios--container {
+  justify-content: center;
+  background-image: url(image/fondo\ ruedas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caja-constraste {
+  margin: 20px;
+  background-color: #3f8914c2;
+  border-radius: 10px;
+  box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3), 
+  inset 0px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.listaBeneficios {
+  columns: 2;
+  margin: 10px;
+}
+
+.listaBeneficios li {
+  display: flex;
+  list-style: none;
+}
+
+h3 {
+  margin: 10px 0px 0px 10px;
+  text-decoration-line: overline underline;
+  text-shadow: 0px 0px 5px rgb(63, 76, 61);
+}
+
 
 /*Sección de portada y formulario de contacto*/
 
