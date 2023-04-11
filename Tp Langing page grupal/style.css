@@ -11,29 +11,59 @@
   Centré los elementos y los acomode a lo largo del contenedor con el justify content.*/
  header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #F8F9F9;
-  padding: 10px;
-
+  background-color: #b70e0e;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-
-Nav ul {
+h1 {
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px 0px 0px 20px;
+  color: #080808;
 }
 
-nav a {
+.headerNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#b70e0e;
+}
+
+.headerNav li {
+  float: left;
+}
+
+.headerNav li a {
+  display: flex;
+  color:  #080808;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: black;
-  cursor: pointer;
 }
 
-li{
-  margin: 0 10px;
+.headerNav li a:hover {
+  background-color: #921818;
 }
+
+/*Sección de portada y formulario de contacto*/
+
+/* agregué la imagen de portada en el background del contenedor, o sea de fondo, para que sea más 
+fácil manipular los elementos dentro del contenedor */
+.portadaForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/portada.jpg); 
+}
+
 .formContact {
-  width: 45%;
+  width: 55%;
   margin:30px 0px 30px 0px;
   display: flex;
   flex-direction: column;
@@ -43,15 +73,6 @@ li{
   justify-content: center;
 }
 
-/* agregué la imagen de portada en el background del contenedor, o sea de fondo, para que sea más 
-fácil manipular los elementos dentro del contenedor */
-.portadaForm {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  background-image: url(image/portada.jpg); 
-}
 
 /*Importante: para el titulo tenemos que lograr ubicarlo bien, agregar algo más al 
 eslogan, cambiarle la fuente, tamaño, ubicarlo bien y lo más importante tratar de que cuando 
@@ -62,7 +83,7 @@ comporte de determinada manera.*/
 .title {
   display: flex;
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 /* Sección de compra de auto usado */
@@ -70,6 +91,7 @@ comporte de determinada manera.*/
 .venta {
   background-color:rgb(12, 9, 9);
 }
+
 h2 {
   text-align: center;
   color: #F8F9F9;
@@ -78,7 +100,7 @@ h2 {
 .imgUsado {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0px;
 }
@@ -113,3 +135,130 @@ h2 {
   justify-content: center;
 }
 
+/*parte de la galería de autos para vender*/
+
+.galeria--container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+
+}
+
+.img-galeria p {
+  color: #F8F9F9;
+  text-align: center;
+}
+
+.skroll--galeria{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  
+}
+
+/*Sección de formulario proceso*/
+
+.formP--container{
+  background-color:rgb(12, 9, 9);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.formProceso {
+  width: 80%;
+  margin:30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color:#f8f9f992;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.presetacion--container{
+  background-color:rgb(12, 9, 9);
+  padding: 10px;
+}
+
+.organizacion--info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:#f8f9f992;
+  margin: 20px;
+}
+
+.galeria--presentacion{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color:#f8f9f992;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px;
+}
+
+.galeria--presentacion--tarjetas{
+  margin: 20px;
+  background-color: #F8F9F9;
+  border-radius: 10px 10px 10px 10px;
+  justify-content: center;
+}
+
+.galeria--presentacion--tarjetas img {
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.iconos-redes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.redesSociales p {
+  color: #f8f9f992;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.iconos-redes li a {
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+h4{
+  color: #f8f9f992;
+  text-align: center;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Footer*/
+
+footer {
+  background-color:rgb(12, 9, 9);
+  color: #f8f9f992;
+  text-align: center;
+}
+
+h4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9f992;
+}
