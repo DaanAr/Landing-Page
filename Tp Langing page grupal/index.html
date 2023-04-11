@@ -23,14 +23,20 @@
             <h1 class="title">Vive la emoción de conducir sin pagar de más</h1>
             <form class="formContact" action="">
                 <p>Comunicate con nosotros!</p>
-                <label>Nombre y apellido</label>
-                <input type="text" value="" width="50px">
-                <label>Email</label>
-                <input type="email" value="">
-                <label>Número de telefono</label>
-                <input type="number" value="">
+                <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Nombre y Apellido</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="email" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Email</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="number" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Telefono</label>
+                  </div>
                 <label>Escribe tu consulta</label>
-                <textarea name="Comentario" id="" cols="30" rows="10">Escribe aquí tu consulta</textarea>
+                <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar"></input>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam necessitatibus in numquam cumque alias? Tempora, cum quasi laudantium soluta commodi deleniti libero et inventore quo vel placeat aliquam obcaecati.</p>
             </form>
@@ -48,7 +54,7 @@
                     <p>Viejo <img src="image/auto-viejo.jpg" alt="" width="300px"></p>
                 </div>
                 <div class="imgU">
-                    <p>Usado <img src="image/auto-usad.jpg" alt="" width="300px"> </p>
+                    <p>Usado <img src="/image/auto-usad.webp" alt="" width="300px"> </p>
                 </div>
             </div>
         </section>
@@ -119,24 +125,44 @@
             <h2>ASESORATE CON NOSOTROS SOBRE LA COTIZACIÓN DE TU VEHÍCULO</h2>
             <form class="formProceso" action="">
                 <p>Rellena los campos con la informacion requerida y te haremos llegar cotización estimada a negociar de tu vehículo por correo electrónico</p>
-                <label>Nombre y apellido</label>
-                <input type="text" value="">
-                <label for="">Email</label>
-                <input type="email" value="">
-                <label for="">Número de telefono</label>
-                <input type="tel" value="">
-                <label for="">Marca de auto</label>
-                <input type="text" value="">
-                <label for="">Modelo</label>
-                <input type="text" value="">
-                <label for="">Estado</label>
-                <input type="text" value="">
-                <label for="">Agregue fotos aquí</label>
-                <input type="file" name="" id="">
-                <label for="">Precio estimado de venta</label>
-                <input type="number" value="">
-                <label for="">Estado de deterioro o kilometraje:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Nombre y Apellido</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="email" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Email</label>
+                  </div>
+                <div class="datos">
+                    <input required="" type="number" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Numero de Telefono</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Marca</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Modelo</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Estado del Vehiculo y Fotos</label>
+                  </div>
+                  <div class="archivos">
+                  <div class="datos">
+                    <input required="" type="file" name="text" autocomplete="off" class="ingresoDatos">
+                  </div>
+                </div>
+                  <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Precio de Venta</label>
+                  </div>
+                  <div class="datos">
+                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                    <label class="user-label">Kilometraje</label>
+                  </div>
+                <p>Comentarios: </p><textarea name="" id="" cols="30" rows="10"></textarea>
                 <button>Enviar</button>
                 <button>Borrar</button>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam necessitatibus in numquam cumque alias? Tempora, cum quasi laudantium soluta commodi deleniti libero et inventore quo vel placeat aliquam obcaecati.</p>
