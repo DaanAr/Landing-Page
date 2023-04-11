@@ -5,20 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <title>Ardanic</title>
 </head>
 <body>
     <header>
-        <h1><img src="icons/carreras.png" alt="icono-rueda" width="40px">Ardanic</h1>
-        <nav class="headerNav"> 
-            <ul>
-                <li><a href="#ventaAuto"> Vendé tu auto</a></li>
-                <li><a href="#compraAuto"> Encontrá tu auto</a></li>
-                <li><a href="#quienesSomos">¿Quienes somos?</li></a>
+        <h2><img src="icons/carreras.png" alt="icono-rueda" width="35px">Ardanic</h2>  
+           <ul class="header--container">
+               <li><a href="#ventaAuto">Comprá</a></li>
+               <li><a href="#compraAuto">Vendé</a></li>
+               <li><a href="#contacto">Contacto</a></li>
+               <li><a href="#quienesSomos">¿Quienes somos?</a></li>
              </ul>
-        </nav>
     </header>
     <main>
+         <section class="portada--container">
+                <h1>¡Viví la experiencia de conducir sin pagar de más!</h1>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_CcrouvPPjm.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;" hover loop  autoplay></lottie-player>
+        </section>
+        <section class="beneficios--container">
+            <div class="caja-constraste">
+                <h3>Comprá, vendé o cambia tu auto con nosotros</h3>
+                <ul class="listaBeneficios">
+                    <li><img src="icons/done_FILL0_wght400_GRAD0_opsz48.png" alt="" width="18px"> Calidad y confianza en cada compra.</li>
+                    <li><img src="icons/done_FILL0_wght400_GRAD0_opsz48.png" alt="" width="18px">En nuestra agencia, el cliente siempre está primero.</li>
+                    <li><img src="icons/done_FILL0_wght400_GRAD0_opsz48.png" alt="" width="18px">Variedad de marcas disponibles.</li>
+                    <li><img src="icons/done_FILL0_wght400_GRAD0_opsz48.png" alt="" width="18px">Atención al cliente por sus propios dueños.</li>
+                    <li><img src="icons/done_FILL0_wght400_GRAD0_opsz48.png" alt="" width="18px">Ahorra tiempo, encontrá todo en un solo lugar.</li>
+                    <li><img src="icons/done_FILL0_wght400_GRAD0_opsz48.png" alt="" width="18px">La seguridad ante todo, realizamos seguimiento postventa.</li>
+                </ul>
+            </div>
+        </section>
         <section class="portadaForm">
             <h1 class="title">Comprá y vendé tu auto de manera segura, fácil y rápido.</h1>
             <form class="formContact" action="">
@@ -244,6 +263,8 @@
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
         </section>
+     <!-- script  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </main>
 <footer>
     <h4><img src="icons/carreras.png" alt="" width="34px">Ardanic</h4>
