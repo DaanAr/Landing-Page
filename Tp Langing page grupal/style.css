@@ -263,34 +263,45 @@ box-shadow: 2px 2px 2px 0px  rgb(70, 69, 69);
 /*Galeria*/
 
 .galeria--container {
-  position: relative;
-}
-
-.img-galeria {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  position: relative;
+  background-image: url(image/fondo\ ruedas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galeria {
+  margin: 20px;
+  background-color: #7d8678bc;
+  border-radius: 10px;
+  box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3), 
+  inset 0px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.img-galeria img{
+  border-radius: 15px;
+  box-shadow:0px 0px 5px #161515;
+  margin: 20px;
 }
 
 .galeria, .img-galeria  {
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
   margin: 10px;
 }
 
 .prev, .next {
-
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px;
+  background-color: transparent;
+  box-shadow:0px 0px 3px #3E8914;
+  border-radius: 10px;
 }
 
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
 
 
 /*Sección de formulario proceso*/
