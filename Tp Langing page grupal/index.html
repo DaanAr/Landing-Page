@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <title>Ardanic</title>
 </head>
 <body>
     <div class="header">
@@ -249,41 +250,50 @@
         </section>
 
                         <!-- a partir de acá falta diseño -->
-        <section class="presetacion--container">
-            <a name="quienesSomos"><h2>¿Quienes somos?</h2></a>
+        <section class="presentacion--container">
+            <a name="quienesSomos"><h4>¿Quienes somos?</h4></a>
             <div class="organizacion--info">
-                <img src="image/organizacion.jpg" alt="imagen de la organizacion" width="300px"> <p>Somos una empresa familiar con más de 30 años de experiencia que se dedica a la compra de vehículos, nos interesa que nuestros clientes reciban un servicio de excelencia como así también un precio justo en su venta,
+                <img src="image/organizacion.jpg" alt="imagen de la organizacion" width="400px"> <p>Somos una empresa familiar con más de 30 años de experiencia que se dedica a la compra de vehículos, <br> nos interesa que nuestros clientes reciban un servicio de excelencia como así también un precio justo en <br> su venta,
                 brindándole la seguridad y transparencia que necesita.
                 </p>
             </div>
-            <h4>Nuestro equipo:</h4>
-            <div class="galeria--presentacion">
-                <div class="galeria--presentacion--tarjetas">
-                    <img src="image/persona1.png" alt="Foto random" width="200px">
-                    <p>Asesor de ventas</p>
-                </div>
-                <div class="galeria--presentacion--tarjetas">
-                    <img src="image/persona2.png" alt="Foto random" width="200px">
-                    <p>Administración</p>
-                </div>
-                <div class="galeria--presentacion--tarjetas">
-                    <img src="image/persona3.png" alt="Foto random" width="200px">
-                    <p>Agente postventa</p>
-                </div>
-                <div class="galeria--presentacion--tarjetas">
-                    <img src="image/persona4.png" alt="Foto random" width="200px">
-                    <p>Gestoría</p>
+            <div class="galeria--container">
+                <h4>Nuestro equipo:</h4>
+                <div class="galeria--presentacion">
+                    <div class="galeria--presentacion--tarjetas">
+                        <img  class="img-hover" src="image/persona2.png" alt="Foto random" width="230px">
+                        <div class="oculto">
+                            <p>Asesor de ventas <br>Carmela es nuestra asesora de ventas, tiene 26 años, vive en Córdoba, estudia Traductorado de Inglés y su hobby es cantar.</p>
+                        </div>
+                    </div>
+                    <div class="galeria--presentacion--tarjetas">
+                        <img class="img-hover" src="image/persona2.png" alt="Foto random" width="230px">
+                        <div class="oculto">
+                            <p>Administración <br>Dana es nuestra encargada del área administrativa, tiene 25 años, vive en Mar del Plata, es estudiante de Psicología y en su tiempo libre le gusta hacer yoga. </p>
+                        </div>
+                    </div>
+                    <div class="galeria--presentacion--tarjetas">
+                        <img class="img-hover" src="image/persona3.png" alt="Foto random" width="230px">
+                        <div class="oculto">
+                            <p>Agente postventa <br>Arianny es nuestra agente postventa, tiene 24 años, vive en CABA, estudia Comunicación Social  y en su tiempo libre practica motocross.</p>
+                        </div>
+                    </div>
+                    <div class="galeria--presentacion--tarjetas">
+                        <img class="img-hover" src="image/persona4.png" alt="Foto random" width="230px">
+                        <div class="oculto">
+                            <p>Gestoría <br>Nicolás es nuestro gestor, tiene 27 años, vive en Tucumán, es estudiante de Marketing Digital y en su tiempo libre se dedica al streaming.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="redesSociales">
                 <p>Síguenos en redes sociales</p>
                 <nav class="iconos-redes">
-                    <ul>
-                        <li><a href=""><img src="icons/gorjeo.png" alt="" width="30px"></a></li> 
-                        <li><a href=""><img src="icons/facebook.png" alt="" width="30px"></a></li>
-                        <li><a href=""><img src="icons/instagram.png" alt="" width="30px"></a></li>
-                        <li><a href=""><img src="icons/whatsapp.png" alt="" width="30px"></a></li>
-                    </ul>
+                        <a href=""><img src="icons/gorjeo.png" alt="" width="30px"></a>
+                        <a href=""><img src="icons/facebook.png" alt="" width="30px"></a>
+                        <a href=""><img src="icons/instagram.png" alt="" width="30px"></a>
+                        <a href=""><img src="icons/whatsapp.png" alt="" width="30px"></a>
                 </nav>
             </div>
             </section>
@@ -294,12 +304,9 @@
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
         </section>
-     <!-- script  -->
-     <script src="index.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </main>
         <footer>
-             <h4><img src="icons/carreras.png" alt="" width="34px">Ardanic</h4>
+             <h2><img src="icons/carreras.png" alt="" width="34px">Ardanic</h2>
              <div>
                 <p>Dirección: Avenida Siempreviva 117, CABA, Argentina</p>
                 <p>Atención al cliente:0800-5511-6921 </p>
@@ -309,7 +316,7 @@
              </div>
         </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
