@@ -4,25 +4,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Ardanic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Quicksand:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1><img src="icons/carreras.png" alt="icono-rueda" width="40px">Ardanic</h1>
-        <nav class="headerNav"> 
-            <ul>
-                <li><a href="#ventaAuto"> Vende tu auto</a></li>
-                <li><a href="#compraAuto"> Encontrá tu auto</a></li>
-                <li><a href="#quienesSomos">¿Quienes somos?</li></a>
+    <div class="header">
+        <h2><img src="icons/carreras.png" alt="icono-rueda" width="35px">Ardanic</h2>  
+           <ul class="header--container">
+               <li><a href="#productos">Comprá</a></li>
+               <li><a href="#ventaAuto">Vendé</a></li>
+               <li><a href="#contacto">Contacto</a></li>
+               <li><a href="#quienesSomos">¿Quienes somos?</a></li>
              </ul>
-        </nav>
-    </header>
+    </div>
     <main>
-        <section class="portadaForm">
-            <h1 class="title">Vive la emoción de conducir sin pagar de más</h1>
-            <form class="formContact" action="">
-                <p>Comunicate con nosotros!</p>
+        <header class="header-content">
+            <h1>Viví la experiencia de conducir <br> sin gastar de más!</h1>
+            <p class="p--header">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Consectetur aspernatur fugiat eius <br> illum est distinctio, debitis, 
+                quo dolorem repudiandae, ex voluptatum?</p>
+        </header>
+        <section class="productos">
+                <h2> <a id="productos"></a> Elegí un auto adaptado a tus necesidades</h2>
+                <span class="linea"></span>
+                <div class="galeria">
+                    <a href="#image1" class="galeria--select">
+                    
+                        <img src="image/galeria autos/fiat-cronos 1.8 cortada.jpg" alt="Fiat Cronos 1.8"  width="300px">
+                        <figcaption>FIAT CRONOS 1.8 PRECISION</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>0KM</figcaption>
+                    
+                    </a>
+                    <a href="#image2" class="galeria--select">
+                    
+                        <img src="image/galeria autos/fiat-palio.jpg" alt="Fiat Idea" width="300px">
+                        <figcaption>FIAT IDEA 1.6 ATTRACTIVE 82CV</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>15.000KM</figcaption>
+                    
+                    </a>
+                    <a href="#image3" class="galeria--select">
+                        
+                        <img src="image/galeria autos/fiat-strada.jpg" alt="Fiat Strada" width="300px">
+                        <figcaption>FIAT STRADA 1.6 ADVENTURE</figcaption>
+                        <figcaption>Caja Manual</figcaption>
+                        <figcaption>236.000KM</figcaption>
+                        
+                    </a>
+                    <a href="#image4" class="galeria--select">
+                        <img src="image/galeria autos/ford ecosport.jpg" alt="Ford Ecosport" width="300px">
+                        <figcaption>FORD ECOSPORT 1.6</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>91.000KM</figcaption>
+                    </a>
+                    <a href="#image5" class="galeria--select">
+                        <img src="image/galeria autos/ford focus.jpg" alt="Ford Focus" width="300px">
+                        <figcaption>FORD FOCUS 3 TREND 1.6</figcaption>
+                        <figcaption>Caja Manual</figcaption>
+                        <figcaption>88.000KM</figcaption>
+                    </a>
+                    <a href="#image6" class="galeria--select">
+                        <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fiesta" width="300px">
+                        <figcaption>FORD FIESTA KINETIC DESIGN</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>12.000KM</figcaption>
+                    </a>
+                    <a href="#image7" class="galeria--select">
+                        <img src="image/galeria autos/Honda-city 1.5.jpg" alt="Honda City 1.5" width="300px">
+                        <figcaption>HONDA CITY 1.5</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>102.000KM</figcaption>
+                    </a>
+                    <a href="#image8" class="galeria--select">
+                        
+                        <img src="image/galeria autos/honda-fit.jpg" alt="Honda Fit" width="300px">
+                        <figcaption>HONDA FIT</figcaption>
+                        <figcaption>Caja Manual</figcaption>
+                        <figcaption>43.000KM</figcaption>
+                    
+                    </a>
+                    <a href="#image9" class="galeria--select">
+                        <img src="image/galeria autos/honda-civic.jpg" alt="Honda Civic" width="300px">
+                        <figcaption>HONDA CIVIC 1.8 LXS</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>159.000KM</figcaption>
+                    </a>
+                    <a href="#image10" class="galeria--select">
+                        <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Golf GTI" width="300px">
+                        <figcaption>VW GOLF GTI </figcaption>
+                        <figcaption>Motor 2.0 Caja Automatica</figcaption>
+                        <figcaption>0KM</figcaption>
+                    </a>
+                    <a href="#image11" class="galeria--select">
+                        <img src="image/galeria autos/volkswagen-gol-trend.jpg" alt="Volkswagen Gol Trend" width="300px">
+                        <figcaption>VW GOL TREND 1.6</figcaption>
+                        <figcaption>Caja Manual</figcaption>
+                        <figcaption>108.000KM</figcaption>
+                    </a>
+                    <a href="#image12" class="galeria--select">
+                        <img src="image/galeria autos/volkswagen-polo.jpg" alt="Volkswagen Polo" width="300px">
+                        <figcaption>VW POLO MOTOR 1.6</figcaption>
+                        <figcaption>Caja Automatica</figcaption>
+                        <figcaption>36.000KM</figcaption>
+                    </a>
+                </div>
+                <div> <!--Falta armar las tarjetas con las características en cada auto, solo se ve la imagen-->
+                    <article class="light-box" id="image1">
+                        <a href="#image12" class="next"> <i class="fas fa-arrow-left"></i> </a>
+                        <img src="image/galeria autos/fiat-cronos 1.8 cortada.jpg" alt="Fiat Cronos 1.8"  width="300px">
+                        <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image2">
+                        <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/fiat-palio.jpg" alt="Fiat Palio" width="300px">
+                        <a href="#image3" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image3">
+                        <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/fiat-strada.jpg" alt="Fiat Strada" width="300px">
+                        <a href="#image4" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image4">
+                        <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/ford ecosport.jpg" alt="Ford Ecosport" width="300px">
+                        <a href="#image5" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image5">
+                        <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/ford focus.jpg" alt="Ford Focus" width="300px">
+                        <a href="#image6" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image6">
+                        <a href="#image5" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fista" width="300px">
+                        <a href="#image7" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image7">
+                        <a href="#image6" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/Honda-city 1.5.jpg" alt="Honda City 1.5" width="300px">
+                        <a href="#image8" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image8">
+                        <a href="#image7" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/honda-fit.jpg" alt="Honda Fit" width="300px">
+                        <a href="#image9" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image9">
+                        <a href="#image8" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/honda-civic.jpg" alt="Honda Civic" width="300px">
+                        <a href="#image10" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image10">
+                        <a href="#image9" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Gog Gti" width="300px">
+                        <a href="#image11" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image11">
+                        <a href="#image10" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/volkswagen-gol-trend.jpg" alt="Volkswagen gol trend" width="300px">
+                        <a href="#image12" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                    <article class="light-box" id="image12">
+                        <a href="#image11" class="next"><i class="fas fa-arrow-left"></i></a>
+                        <img src="image/galeria autos/volkswagen-polo.jpg" alt="Volkswagen polo" width="300px">
+                        <a href="#image1" class="next"> <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#producto--title" class="close">X</a>
+                    </article>
+                </div>
+                <span class="linea"></span>
+        </section>
+        <section class="contact--container">
+            <div class="beneficios--container">
+                <h3>Te ofrecemos:</h3>
+                <div class="tarjeta--beneficio">
+                    <img src="Icons/work_history_FILL0_wght400_GRAD0_opsz48.png" alt="work">
+                    <p>Calidad y confianza en cada compra.</p>
+                </div>
+                <div class="tarjeta--beneficio">
+                    <img src="Icons/e911_emergency_FILL0_wght400_GRAD0_opsz48.png" alt="seguridad">
+                    <p>La seguridad ante todo, realizamos seguimiento postventa.</p>
+                </div>
+                <div class="tarjeta--beneficio">
+                    <img src="Icons/hourglass_top_FILL0_wght400_GRAD0_opsz48.png" alt="tiempo">
+                    <p>Ahorra tiempo, encontrá todo en un solo lugar.</p>
+                </div>
+            </div>
+            <div class="form-contacto">
+                <p> <a name="contacto"></a> ¿Tenés consultas?Comunicate con nosotros!</p>
                 <div class="datos">
                     <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
                     <label class="user-label">Nombre y Apellido</label>
@@ -32,154 +215,92 @@
                     <label class="user-label">Email</label>
                   </div>
                   <div class="datos">
-                    <input required="" type="number" name="text" autocomplete="off" class="ingresoDatos">
+                    <input required="" type="tel" name="text" autocomplete="off" class="ingresoDatos">
                     <label class="user-label">Telefono</label>
                   </div>
-                <label>Escribe tu consulta</label>
-                <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
+                <label class="datos">Escribe tu consulta</label>
+                <textarea name="Comentario" id="" cols="30" rows="10" class="datos"></textarea>
                 <input type="submit" value="Enviar"></input>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam necessitatibus in numquam cumque alias? Tempora, cum quasi laudantium soluta commodi deleniti libero et inventore quo vel placeat aliquam obcaecati.</p>
-            </form>
+                <p>Dejanos tus datos y un asesor te contactará a la brevedad</p>
+            </div>  
         </section>
-        <section class="venta">
-            <a name="ventaAuto"><h2>Compramos tu auto!</h2></a>
-            <div class="imgUsado">
-                <div class="imgU">
-                    <p>Chocado <img src="image/chocado5.jpg" alt="" width="300px"></p>
+        <section class="compramos-auto" >
+            <a name="ventaAuto"><h2>¡Vendé tu auto! Lo compramos en el estado en el que se encuentre.</h2></a>
+            <div class="compraAuto-container">
+                <div class="tarjetaAuto-estado">
+                    <div class="imgU">
+                        <p>Vandalizado </p>
+                        <img src="image/auto-vandalizado.jpg" alt="" width="300px">
+                    </div>
+                    <div class="imgU">
+                        <p>Viejo </p>
+                        <img src="image/auto-viejo.jpg" alt="" width="300px">
+                    </div>
+                    <div class="imgU">
+                        <p>Usado</p>
+                        <img src="image/auto-usad.jpg" alt="" width="300px"> 
+                    </div>
+                    <div class="imgU">
+                        <p>Usado  </p>
+                        <img src="image/chocado5.jpg" alt="" width="300px">
+                    </div>
                 </div>
-                <div class="imgU">
-                    <p>Vandalizado <img src="image/auto-vandalizado.jpg" alt="" width="300px"></p>
-                </div>
-                <div class="imgU">
-                    <p>Viejo <img src="image/auto-viejo.jpg" alt="" width="300px"></p>
-                </div>
-                <div class="imgU">
-                    <p>Usado <img src="/image/auto-usad.webp" alt="" width="300px"> </p>
-                </div>
-            </div>
-        </section>
-        <section class="compra--container">
-            <div class="compra--title">
-                <a name="compraAuto"><h2>ADQUIRÍ TU VEHÍCULO ADAPTADO A TUS NECESIDADES SIN GASTAR DE MÁS</h2></a>
-            </div>
-            <div class="compra--search">
-                <input class="search-input" type="text" value=" Buscar">
-                <button><img src="image/search.png" alt="buscador" width="13px"></button>
-            </div>
-            <div class="galeria--container">
-                <div class="img-galeria">
-                    <img src="image/galeria autos/fiat-cronos 1.8 cortada.jpg" alt="Fiat Cronos 1.8"  width="300px"> 
-                    <p>Fiat Cronos 1.8</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/fiat-palio.jpg" alt="Fiat Palio" width="300px">
-                    <p>Fiat Palio</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/fiat-strada.jpg" alt="Fiat Strada" width="300px">
-                    <p>Fiat Strada</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/ford ecosport.jpg" alt="Ford Ecosport" width="300px">
-                    <p>Ford Ecosport</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/ford focus.jpg" alt="Ford Focus" width="300px">
-                    <p>Ford Focus</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fista" width="300px">
-                    <p>Ford Fista</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/Honda-city 1.5.jpg" alt="Honda City 1.5" width="300px">
-                    <p>Honda City 1.5</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/honda-fit.jpg" alt="Honda Fit" width="300px">
-                    <p>Honda Fit</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/honda-civic.jpg" alt="Honda Civic" width="300px">
-                    <p>Honda Civic</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Gog Gti" width="300px">
-                    <p>Volkswagen Gog Gti</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/volkswagen-gol-trend.jpg" alt="Volkswagen gol trend" width="300px">
-                    <p>Volkswagen gol trend</p>
-                </div>
-                <div class="img-galeria">
-                    <img src="image/galeria autos/volkswagen-polo.jpg" alt="Volkswagen polo" width="300px">
-                    <p>Volkswagen polo</p>
-                </div>
-            </div>
-            <div class="skroll--galeria">
-                <button>flechita izquierda</button>
-                <button>flechita derecha</button>
+                <section class="formP--container">
+                    <h2>ASESORATE CON NOSOTROS SOBRE LA COTIZACIÓN DE TU VEHÍCULO</h2>
+                        <p>Rellena los campos con la informacion requerida y te haremos llegar cotización estimada a negociar de tu vehículo por correo electrónico</p>
+                        <div class="datos">
+                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Nombre y Apellido</label>
+                          </div>
+                          <div class="datos">
+                            <input required="" type="email" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Email</label>
+                          </div>
+                        <div class="datos">
+                            <input required="" type="number" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Numero de Telefono</label>
+                          </div>
+                          <div class="datos">
+                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Marca</label>
+                          </div>
+                          <div class="datos">
+                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Modelo</label>
+                          </div>
+                          <div class="datos">
+                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Estado del Vehiculo y Fotos</label>
+                          </div>
+                          <div class="datos">
+                            <input required="" type="file" name="text" autocomplete="off" class="ingresoDatos" >
+                          </div>
+                          <div class="datos">
+                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Precio de Venta</label>
+                          </div>
+                          <div class="datos">
+                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Kilometraje</label>
+                          </div>
+                        <p>Comentarios: </p><textarea name="" id="" cols="50" rows="5"></textarea>
+                        <button>Enviar</button>
+                        <button>Borrar</button>
+                        <p>Un asesor te contactará a la brevedad.</p>
+                    </form>
+                </section>
             </div>
         </section>
-        <section class="formP--container">
-            <h2>ASESORATE CON NOSOTROS SOBRE LA COTIZACIÓN DE TU VEHÍCULO</h2>
-            <form class="formProceso" action="">
-                <p>Rellena los campos con la informacion requerida y te haremos llegar cotización estimada a negociar de tu vehículo por correo electrónico</p>
-                <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Nombre y Apellido</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="email" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Email</label>
-                  </div>
-                <div class="datos">
-                    <input required="" type="number" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Numero de Telefono</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Marca</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Modelo</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Estado del Vehiculo y Fotos</label>
-                  </div>
-                  <div class="archivos">
-                  <div class="datos">
-                    <input required="" type="file" name="text" autocomplete="off" class="ingresoDatos">
-                  </div>
-                </div>
-                  <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Precio de Venta</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Kilometraje</label>
-                  </div>
-                <p>Comentarios: </p><textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
-                <button>Borrar</button>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ipsam necessitatibus in numquam cumque alias? Tempora, cum quasi laudantium soluta commodi deleniti libero et inventore quo vel placeat aliquam obcaecati.</p>
-            </form>
-        </section>
+
+                        <!-- a partir de acá falta diseño -->
         <section class="presetacion--container">
-            <a name="quienesSomos"><h2>Quienes somos?</h2></a>
+            <a name="quienesSomos"><h2>¿Quienes somos?</h2></a>
             <div class="organizacion--info">
-                <img src="image/organizacion.jpg" alt="imagen de la organizacion" width="300px"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, harum? Nesciunt perspiciatis in delectus 
-                    magnam cumque ad perferendis 
-                    ipsa suscipit deleniti? Sit eveniet voluptas aspernatur quidem magni sunt, consequuntur suscipit. 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi corporis pariatur illum, qui dolores 
-                    deserunt tenetur ullam! 
-                    Laborum, fugit blanditiis rerum vitae facilis enim nisi provident, doloremque deleniti fuga eos.</p>
-                   
+                <img src="image/organizacion.jpg" alt="imagen de la organizacion" width="300px"> <p>Somos una empresa familiar con más de 30 años de experiencia que se dedica a la compra de vehículos, nos interesa que nuestros clientes reciban un servicio de excelencia como así también un precio justo en su venta,
+                brindándole la seguridad y transparencia que necesita.
+                </p>
             </div>
-            <h4>Atención personalizada:</h4>
+            <h4>Nuestro equipo:</h4>
             <div class="galeria--presentacion">
                 <div class="galeria--presentacion--tarjetas">
                     <img src="image/persona1.png" alt="Foto random" width="200px">
@@ -209,7 +330,7 @@
                     </ul>
                 </nav>
             </div>
-        </section>
+            </section>
         <section class="maps">
                 <!-- acá va la API de maps.  -->
                 <p>Encontranos en: </p>
@@ -217,17 +338,22 @@
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
         </section>
+     <!-- script  -->
+     <script src="index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </main>
-<footer>
-    <h4><img src="icons/carreras.png" alt="" width="34px">Ardanic</h4>
-    <div>
-        <p>Dirección: sdasdaifj</p>
-        <p>localidad</p>
-        <p>Atención al cliente:0800-5511-6921 </p>
-    </div>
-    <div>
-        <p>Creditos desarrollador web: nombres de nosotros </p>
-    </div>
-</footer>
+        <footer>
+             <h4><img src="icons/carreras.png" alt="" width="34px">Ardanic</h4>
+             <div>
+                <p>Dirección: Avenida Siempreviva 117, CABA, Argentina</p>
+                <p>Atención al cliente:0800-5511-6921 </p>
+             </div>
+              <div>
+                <p>Creditos desarrollador web: Dana, Nicolas, Arianny, Carmela </p>
+             </div>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
