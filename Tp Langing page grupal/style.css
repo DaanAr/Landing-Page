@@ -498,6 +498,11 @@ margin-bottom: 20px;
   width: 70%
 }
 
+.vistaPrevia{
+  background-color: #9792929a;
+  border-radius: 10px;
+}
+
 .formP--container p {
 margin: 13px;
 }
