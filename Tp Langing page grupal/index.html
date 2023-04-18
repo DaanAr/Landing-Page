@@ -8,7 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Gruppo&display=swap" rel="stylesheet">
     <title>Ardanic</title>
 </head>
 <body>
@@ -31,114 +38,325 @@
         <section class="productos">
                 <h2> <a id="productos"></a> Elegí un auto adaptado a tus necesidades</h2>
                 <span class="linea"></span>
+                <div class="filtros-btn">
+                    <button class="btn">Todo</button>
+                    <button class="btn">Fiat</button>
+                    <button class="btn">Ford</button>
+                    <button class="btn">Volkswagen</button>
+                    <button class="btn">Honda</button>
+                </div>
                 <div class="galeria">
-                    <a href="#image1" class="galeria--select">
+                    <a href="#image1" class="galeriaObjeto" data-filter="fiat">
                         <img src="image/galeria autos/fiat-cronos 1.8 cortada.jpg" alt="Fiat Cronos 1.8"  width="300px">
+                        <p><strong>Fiat Cronos 1.8</strong></p>
                     </a>
-                    <a href="#image2" class="galeria--select">
+                    <a href="#image2" class="galeriaObjeto" data-filter="fiat">
                         <img src="image/galeria autos/fiat-palio.jpg" alt="Fiat Palio" width="300px">
+                        <p><strong>Fiat Palio</strong></p>
                     </a>
-                    <a href="#image3" class="galeria--select">
+                    <a href="#image3" class="galeriaObjeto" data-filter="fiat">
                         <img src="image/galeria autos/fiat-strada.jpg" alt="Fiat Strada" width="300px">
+                        <p><strong>Fiat Strada</strong></p>
                     </a>
-                    <a href="#image4" class="galeria--select">
+                    <a href="#image4" class="galeriaObjeto" data-filter="ford">
                         <img src="image/galeria autos/ford ecosport.jpg" alt="Ford Ecosport" width="300px">
+                        <p><strong>Ford Ecosport</strong></p>
                     </a>
-                    <a href="#image5" class="galeria--select">
+                    <a href="#image5" class="galeriaObjeto" data-filter="ford">
                         <img src="image/galeria autos/ford focus.jpg" alt="Ford Focus" width="300px">
+                        <p><strong>Ford Focus</strong></p>
                     </a>
-                    <a href="#image6" class="galeria--select">
-                        <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fista" width="300px">
+                    <a href="#image6" class="galeriaObjeto" data-filter="ford">
+                        <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fiesta" width="300px">
+                        <p><strong>Ford Fiesta</strong></p>
                     </a>
-                    <a href="#image7" class="galeria--select">
+                    <a href="#image7" class="galeriaObjeto" data-filter="honda">
                         <img src="image/galeria autos/Honda-city 1.5.jpg" alt="Honda City 1.5" width="300px">
+                        <p><strong>Honda City 1.5</strong></p>
                     </a>
-                    <a href="#image8" class="galeria--select">
+                    <a href="#image8" class="galeriaObjeto" data-filter="honda">
                         <img src="image/galeria autos/honda-fit.jpg" alt="Honda Fit" width="300px">
+                        <p><strong>Honda Fit</strong></p>
                     </a>
-                    <a href="#image9" class="galeria--select">
+                    <a href="#image9" class="galeriaObjeto" data-filter="honda">
                         <img src="image/galeria autos/honda-civic.jpg" alt="Honda Civic" width="300px">
+                        <p><strong>Honda Civic</strong></p>
                     </a>
-                    <a href="#image10" class="galeria--select">
-                        <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Gog Gti" width="300px">
+                    <a href="#image10" class="galeriaObjeto" data-filter="volkswagen">
+                        <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Gol Gti" width="300px">
+                        <p><strong>Volkswagen Gol Gti</strong></p>
                     </a>
-                    <a href="#image11" class="galeria--select">
+                    <a href="#image11" class="galeriaObjeto" data-filter="volkswagen">
                         <img src="image/galeria autos/volkswagen-gol-trend.jpg" alt="Volkswagen gol trend" width="300px">
+                        <p><strong>Volkswagen Gol trend</strong></p>
                     </a>
-                    <a href="#image12" class="galeria--select">
+                    <a href="#image12" class="galeriaObjeto" data-filter="volkswagen">
                         <img src="image/galeria autos/volkswagen-polo.jpg" alt="Volkswagen polo" width="300px">
+                        <p><strong>Volkswagen polo</strong></p>
                     </a>
                 </div>
                 <div> <!--Falta armar las tarjetas con las características en cada auto, solo se ve la imagen-->
                     <article class="light-box" id="image1">
                         <a href="#image12" class="next"> <i class="fas fa-arrow-left"></i> </a>
-                        <img src="image/galeria autos/fiat-cronos 1.8 cortada.jpg" alt="Fiat Cronos 1.8"  width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/fiat-cronos 1.8 cortada.jpg" alt="Fiat Cronos 1.8"  width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image2">
                         <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/fiat-palio.jpg" alt="Fiat Palio" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/fiat-palio.jpg" alt="Fiat Palio" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image3" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image3">
                         <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/fiat-strada.jpg" alt="Fiat Strada" width="300px">
+                            <div class="tarjeta-auto">
+                                <img src="image/galeria autos/fiat-strada.jpg" alt="Fiat Strada" width="400px">
+                                <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image4" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image4">
                         <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/ford ecosport.jpg" alt="Ford Ecosport" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/ford ecosport.jpg" alt="Ford Ecosport" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image5" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image5">
                         <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/ford focus.jpg" alt="Ford Focus" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/ford focus.jpg" alt="Ford Focus" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image6" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image6">
                         <a href="#image5" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fista" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/ford-fiesta Kd.jpg" alt="Ford Fista" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image7" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image7">
                         <a href="#image6" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/Honda-city 1.5.jpg" alt="Honda City 1.5" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/Honda-city 1.5.jpg" alt="Honda City 1.5" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image8" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image8">
                         <a href="#image7" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/honda-fit.jpg" alt="Honda Fit" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/honda-fit.jpg" alt="Honda Fit" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image9" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image9">
                         <a href="#image8" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/honda-civic.jpg" alt="Honda Civic" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/honda-civic.jpg" alt="Honda Civic" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image10" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image10">
                         <a href="#image9" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Gog Gti" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/volkswagen-gof gti.jpg" alt="Volkswagen Gog Gti" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image11" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image11">
                         <a href="#image10" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/volkswagen-gol-trend.jpg" alt="Volkswagen gol trend" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/volkswagen-gol-trend.jpg" alt="Volkswagen gol trend" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image12" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
                     <article class="light-box" id="image12">
                         <a href="#image11" class="next"><i class="fas fa-arrow-left"></i></a>
-                        <img src="image/galeria autos/volkswagen-polo.jpg" alt="Volkswagen polo" width="300px">
+                        <div class="tarjeta-auto">
+                            <img src="image/galeria autos/volkswagen-polo.jpg" alt="Volkswagen polo" width="400px">
+                            <div class="tarjeta-auto--text">
+                                <h3>Características:</h3>
+                                <ul>
+                                    <li>Combustible: nafta</li>
+                                    <li>Cilindrada: 1747 cm³</li>
+                                    <li>Tipo: SOHC 16 válvulas, comandado por cadena "for life", Distribución variable</li>
+                                    <li>Relación de compresión: 11:1</li>
+                                    <li>Potencia máxima: 130 CV a 5250 RPM</li>
+                                    <li>Torque máximo: 18,6 kgm a 3750 RPM</li>
+                                    <li>Alimentación: inyección electrónica multipunto</li>
+                                    <li>Acelerador electrónico: sí</li>
+                                    <li>Transmisión: manual de 5 velocidades y retroceso/Automática secuencial 6 velocidades</li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#image1" class="next"> <i class="fas fa-arrow-right"></i> </a>
                         <a href="#producto--title" class="close">X</a>
                     </article>
@@ -161,26 +379,28 @@
                     <p>Ahorra tiempo, encontrá todo en un solo lugar.</p>
                 </div>
             </div>
-            <div class="form-contacto">
-                <p> <a name="contacto"></a> ¿Tenés consultas?Comunicate con nosotros!</p>
-                <div class="datos">
-                    <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Nombre y Apellido</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="email" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Email</label>
-                  </div>
-                  <div class="datos">
-                    <input required="" type="tel" name="text" autocomplete="off" class="ingresoDatos">
-                    <label class="user-label">Telefono</label>
-                  </div>
-                <label class="datos">Escribe tu consulta</label>
-                <textarea name="Comentario" id="" cols="30" rows="10" class="datos"></textarea>
+                <form action="" method="post" name="registrarDatos" id="registrarDatos"  class="form-contacto">
+                    <p> <a name="contacto"></a> ¿Tenés consultas?Comunicate con nosotros!</p>
+                    <div class="datos">
+                        <input required="" type="text" name="nombre" autocomplete="off" class="ingresoDatos">
+                        <label class="user-label">Nombre y Apellido</label>
+                    </div>
+                    <div class="datos">
+                        <input required="" type="email" name="correo" autocomplete="off" class="ingresoDatos">
+                        <label class="user-label">Email</label>
+                    </div>
+                    <div class="datos">
+                            <input required="" type="tel" name="tel" autocomplete="off" class="ingresoDatos">
+                            <label class="user-label">Telefono</label>
+                    </div>
+                    <textarea name="Comentario" id="" cols="30" rows="10" class="datos"> Escribe tu consulta</textarea>
                 <input type="submit" value="Enviar"></input>
                 <p>Dejanos tus datos y un asesor te contactará a la brevedad</p>
-            </div>  
+                </form>
+
         </section>
+
+        <!-- a partir de acá falta diseño -->
         <section class="compramos-auto" >
             <a name="ventaAuto"><h2>¡Vendé tu auto! Lo compramos en el estado en el que se encuentre.</h2></a>
             <div class="compraAuto-container">
@@ -204,51 +424,55 @@
                 </div>
                 <section class="formP--container">
                     <h2>ASESORATE CON NOSOTROS SOBRE LA COTIZACIÓN DE TU VEHÍCULO</h2>
-                        <p>Rellena los campos con la informacion requerida y te haremos llegar cotización estimada a negociar de tu vehículo por correo electrónico</p>
+                    <p>Rellena los campos con la informacion requerida y te haremos llegar cotización estimada a negociar de tu vehículo por correo electrónico</p>
+                    <form action="#" method="post" name="registrarDatos" id="registrarDatos" class="ingresoDatos">
                         <div class="datos">
-                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="text" name="nombre" autocomplete="off" class="ingresoDatos" id="nombre">
                             <label class="user-label">Nombre y Apellido</label>
                           </div>
                           <div class="datos">
-                            <input required="" type="email" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="email" name="correo" autocomplete="off" class="ingresoDatos" id="correo">
                             <label class="user-label">Email</label>
                           </div>
                         <div class="datos">
-                            <input required="" type="number" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="tel" name="tel" autocomplete="off" class="ingresoDatos" id="telefono">
                             <label class="user-label">Numero de Telefono</label>
                           </div>
                           <div class="datos">
-                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="text" name="marca" autocomplete="off" class="ingresoDatos" id="marca">
                             <label class="user-label">Marca</label>
                           </div>
                           <div class="datos">
-                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="text" name="modelo" autocomplete="off" class="ingresoDatos" id="modelo">
                             <label class="user-label">Modelo</label>
                           </div>
                           <div class="datos">
-                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
-                            <label class="user-label">Estado del Vehiculo y Fotos</label>
+                            <input required="" type="text" name="estado" autocomplete="off" class="ingresoDatos" id="estado">
+                            <label class="user-label">Estado del Vehiculo</label>
                           </div>
                           <div class="datos">
-                            <input required="" type="file" name="text" autocomplete="off" class="ingresoDatos" >
+                            <input type="file" name="archivo" autocomplete="off" class="ingresoDatos" >
                           </div>
                           <div class="datos">
-                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="text" name="precio" autocomplete="off" class="ingresoDatos" id="precio">
                             <label class="user-label">Precio de Venta</label>
                           </div>
                           <div class="datos">
-                            <input required="" type="text" name="text" autocomplete="off" class="ingresoDatos">
+                            <input required="" type="text" name="kilometraje" autocomplete="off" class="ingresoDatos" id="kilometraje">
                             <label class="user-label">Kilometraje</label>
                           </div>
-                        <p>Comentarios: </p><textarea name="" id="" cols="50" rows="5"></textarea>
-                        <button>Enviar</button>
-                        <button>Borrar</button>
+                            <textarea id="comentarios" name="" id="" cols="50" rows="5">Comentarios</textarea>
+                        <div id="vistaPrevia" class="vistaPrevia">
+                        </div>
+                        <button >Enviar</button>
+                        <button  type="reset">Borrar</button>
+                        <button  class="btn-vP" type="button" onclick="mostrarVistaPrevia()">Vista previa</button>
+                        <button  type="button" id="generarPDF">Generar PDF</button>
                         <p>Un asesor te contactará a la brevedad.</p>
                     </form>
                 </section>
             </div>
         </section>
-
                         <!-- a partir de acá falta diseño -->
         <section class="presentacion--container">
             <a name="quienesSomos"><h4>¿Quienes somos?</h4></a>
@@ -260,25 +484,25 @@
             <div class="galeria--container">
                 <h4>Nuestro equipo:</h4>
                 <div class="galeria--presentacion">
-                    <div class="galeria--presentacion--tarjetas">
+                    <div class="galeriaPresentacion--tarjetas">
                         <img  class="img-hover" src="image/persona2.png" alt="Foto random" width="230px">
                         <div class="oculto">
                             <p>Asesor de ventas <br>Carmela es nuestra asesora de ventas, tiene 26 años, vive en Córdoba, estudia Traductorado de Inglés y su hobby es cantar.</p>
                         </div>
                     </div>
-                    <div class="galeria--presentacion--tarjetas">
+                    <div class="galeriaPresentacion--tarjetas">
                         <img class="img-hover" src="image/persona2.png" alt="Foto random" width="230px">
                         <div class="oculto">
                             <p>Administración <br>Dana es nuestra encargada del área administrativa, tiene 25 años, vive en Mar del Plata, es estudiante de Psicología y en su tiempo libre le gusta hacer yoga. </p>
                         </div>
                     </div>
-                    <div class="galeria--presentacion--tarjetas">
+                    <div class="galeriaPresentacion--tarjetas">
                         <img class="img-hover" src="image/persona3.png" alt="Foto random" width="230px">
                         <div class="oculto">
                             <p>Agente postventa <br>Arianny es nuestra agente postventa, tiene 24 años, vive en CABA, estudia Comunicación Social  y en su tiempo libre practica motocross.</p>
                         </div>
                     </div>
-                    <div class="galeria--presentacion--tarjetas">
+                    <div class="galeriaPresentacion--tarjetas">
                         <img class="img-hover" src="image/persona4.png" alt="Foto random" width="230px">
                         <div class="oculto">
                             <p>Gestoría <br>Nicolás es nuestro gestor, tiene 27 años, vive en Tucumán, es estudiante de Marketing Digital y en su tiempo libre se dedica al streaming.</p>
@@ -316,6 +540,7 @@
              </div>
         </footer>
     </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
